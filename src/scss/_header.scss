@@ -1,0 +1,61 @@
+$active-color: #1C2A39;
+$inactive-color: #5C6A79;
+
+header {
+    padding: 47px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; 
+    top: 0;  
+    background-color: white;
+    z-index: 1000;
+
+    .header_logo {
+        cursor: pointer;
+    }
+
+    .header_nav {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        list-style-type: none;
+
+        li {
+            font-weight: 800; 
+            font-family: Montserrat;
+            font-size: 10px;
+            line-height: 12.19px;
+            letter-spacing: 0%;
+            color: $inactive-color;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: inherit; 
+            }
+
+            &.active {
+                color: $active-color;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .header_icons {
+        button {
+            background: none;
+            border: none;
+            padding-right: 20px;
+            cursor: pointer;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

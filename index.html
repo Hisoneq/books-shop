@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Books-shop</title>
+</head>
+<body>
+    <header>
+        <img src="/src/img/header/logo.svg" alt="logo" class="header_logo">
+        <ul class="header_nav">
+            <li><a href="#books" data-section="books">BOOKS</a></li>
+            <li><a href="#audiobooks" data-section="audiobooks">AUDIOBOOKS</a></li>
+            <li><a href="#stationery" data-section="stationery">STATIONERY & GIFTS</a></li>
+            <li><a href="#blog" data-section="blog">BLOG</a></li>
+        </ul>
+        <div class="header_icons">
+            <button type="button"><img src="/src/img/header/user-icon.svg" alt="userIcon"></button>
+            <button type="button"><img src="/src/img/header/search-icon.svg" alt="searchIcon"></button>
+            <button type="button"><img src="/src/img/header/shop_bag-ico.svg" alt="bagIcon"></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_slider">
+            <img src="/src/img/main/banner1.png" alt="banner1" id="slider_first" class="firstPict">
+            <img src="/src/img/main/banner2.png" alt="banner2" id="slider_second" class="firstPict" style="display: none;">
+            <img src="/src/img/main/banner3.png" alt="banner3" id="slider_third" class="firstPict" style="display: none;">
+            
+            <a href="#promo1"><img src="/src/img/main/promo1.png" alt="promo1" class="promo1"></a>
+            <a href="#promo2"><img src="/src/img/main/promo2.png" alt="promo2" class="promo2"></a>
+            
+            <div class="main__controls">
+                <div class="main__circle active" id="firstCircle"></div>
+                <div class="main__circle" id="secondCircle"></div>
+                <div class="main__circle" id="thirdCircle"></div>
+            </div>
+        </div>
+    </main>
+ 
+    <footer>
+
+    </footer>
+
+    <script src="/dist/main.js"></script>
+</body>
+</html>
