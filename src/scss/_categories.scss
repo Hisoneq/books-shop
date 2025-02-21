@@ -1,0 +1,35 @@
+$categories-bg: #EFEEF6;
+$active-categoty-color: #1C2A39;
+$inactive-category-color: #5C6A79;
+
+.categories{
+    background-color: $categories-bg;
+    font-family: Montserrat;
+    margin-top: 100px;
+    max-width: 416px;
+    height: auto;
+
+    .categories__nav{
+        list-style-type: none;
+        padding: 45px 150px 80px;
+
+        li{
+            margin-bottom: 23px;
+            cursor: pointer;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            a{
+                text-decoration: none;
+                color: $inactive-category-color;
+            }
+
+            &.active{
+                color: $active-categoty-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
