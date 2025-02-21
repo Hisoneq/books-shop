@@ -5,4 +5,5 @@ import { setupCategories } from './src/js/categories.js';
 document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
     setupSlider();
+    setupCategories();
 });

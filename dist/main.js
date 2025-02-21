@@ -16,7 +16,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_js_navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/js/navigation.js */ \"./src/js/navigation.js\");\n/* harmony import */ var _src_js_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/js/slider.js */ \"./src/js/slider.js\");\n/* harmony import */ var _src_js_categories_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/js/categories.js */ \"./src/js/categories.js\");\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    (0,_src_js_navigation_js__WEBPACK_IMPORTED_MODULE_0__.setupNavigation)();\r\n    (0,_src_js_slider_js__WEBPACK_IMPORTED_MODULE_1__.setupSlider)();\r\n});\n\n//# sourceURL=webpack://books/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_js_navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/js/navigation.js */ \"./src/js/navigation.js\");\n/* harmony import */ var _src_js_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/js/slider.js */ \"./src/js/slider.js\");\n/* harmony import */ var _src_js_categories_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/js/categories.js */ \"./src/js/categories.js\");\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    (0,_src_js_navigation_js__WEBPACK_IMPORTED_MODULE_0__.setupNavigation)();\r\n    (0,_src_js_slider_js__WEBPACK_IMPORTED_MODULE_1__.setupSlider)();\r\n    (0,_src_js_categories_js__WEBPACK_IMPORTED_MODULE_2__.setupCategories)();\r\n});\n\n//# sourceURL=webpack://books/./index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   setupCategories: () => (/* binding */ setupCategories)\n/* harmony export */ });\nfunction setupCategories(){\r\n    const categotyItems = document.querySelectorAll('.categories__nav li');\r\n\r\n    if (categotyItems.length > 0) {\r\n        categotyItems[0].classList.add('active');\r\n    }\r\n\r\n    categotyItemsItems.forEach(item => {\r\n        item.addEventListener('click', () => {\r\n           categotyItems.forEach(el => el.classList.remove('active'));\r\n            item.classList.add('active');\r\n        });\r\n    });\r\n}\n\n//# sourceURL=webpack://books/./src/js/categories.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   setupCategories: () => (/* binding */ setupCategories)\n/* harmony export */ });\nfunction setupCategories(){\r\n    const categotyItems = document.querySelectorAll('.categories__nav li');\r\n\r\n    if (categotyItems.length > 0) {\r\n        categotyItems[0].classList.add('active');\r\n    }\r\n\r\n    categotyItems.forEach(item => {\r\n        item.addEventListener('click', () => {\r\n           categotyItems.forEach(el => el.classList.remove('active'));\r\n            item.classList.add('active');\r\n        });\r\n    });\r\n}\n\n//# sourceURL=webpack://books/./src/js/categories.js?");
 
 /***/ }),
 
